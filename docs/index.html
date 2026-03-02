@@ -3,14 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Legal Documents</title>
-  <style>body{max-width:860px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}</style>
+  <title>AI Fly Social Publisher</title>
+  <meta name="description" content="AI Fly Social Publisher helps creators schedule and publish short videos to supported social platforms." />
+  <style>
+    :root { --text:#111827; --muted:#4b5563; --bg:#ffffff; --card:#f9fafb; --line:#e5e7eb; --brand:#2563eb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.7; }
+    .wrap { max-width:960px; margin:0 auto; padding:24px 16px 48px; }
+    nav { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:24px; }
+    nav a { color:var(--brand); text-decoration:none; font-weight:600; }
+    .hero { padding:20px; border:1px solid var(--line); border-radius:14px; background:var(--card); }
+    h1,h2,h3 { line-height:1.25; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:18px; }
+    .card { border:1px solid var(--line); border-radius:12px; padding:14px; background:#fff; }
+    .muted { color:var(--muted); }
+    footer { margin-top:28px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
+    code { background:#eef2ff; padding:2px 6px; border-radius:6px; }
+  </style>
 </head>
 <body>
-  <h1>Legal Documents</h1>
-  <ul>
-    <li><a href="./terms.html">Terms of Service</a></li>
-    <li><a href="./privacy.html">Privacy Policy</a></li>
-  </ul>
+  <div class="wrap">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="./support.html">Support</a>
+    </nav>
+
+    <section class="hero">
+      <h1>AI Fly Social Publisher</h1>
+      <p class="muted">A social publishing service for creating, scheduling, and distributing short-form content across supported platforms.</p>
+      <p><strong>Service status:</strong> Active development and compliance review.</p>
+    </section>
+
+    <h2>What this product does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1) Connect</h3>
+        <p>Users can connect supported social accounts via official OAuth authorization flows.</p>
+      </div>
+      <div class="card">
+        <h3>2) Create & Schedule</h3>
+        <p>Users upload media, add captions, configure metadata, and schedule publish time.</p>
+      </div>
+      <div class="card">
+        <h3>3) Publish</h3>
+        <p>The service submits content to connected platforms based on user authorization and platform rules.</p>
+      </div>
+      <div class="card">
+        <h3>4) Track</h3>
+        <p>Basic status and diagnostics are stored to help users verify delivery and troubleshoot failures.</p>
+      </div>
+    </div>
+
+    <h2>Use of TikTok APIs</h2>
+    <ul>
+      <li>This service uses TikTok OAuth for account authorization.</li>
+      <li>This service uses TikTok content posting capabilities only for user-authorized publishing.</li>
+      <li>No user credentials are requested directly; authorization is delegated to TikTok OAuth.</li>
+    </ul>
+
+    <h2>Compliance links</h2>
+    <ul>
+      <li><a href="./privacy.html">Privacy Policy</a></li>
+      <li><a href="./terms.html">Terms of Service</a></li>
+      <li><a href="./support.html">Support / Contact</a></li>
+    </ul>
+
+    <footer>
+      Contact: <a href="mailto:aiflyfei@gmail.com">aiflyfei@gmail.com</a><br/>
+      © 2026 AI Fly
+    </footer>
+  </div>
 </body>
 </html>
